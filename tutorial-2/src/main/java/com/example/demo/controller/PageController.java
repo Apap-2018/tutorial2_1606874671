@@ -34,7 +34,7 @@ public class PageController {
 	}
 	
 	@RequestMapping("/generator")
-	public String generator(@RequestParam(value = "a", required = false, defaultValue = "0") String a, @RequestParam(value = "b", required = false, defaultValue = "0") String b, Model model) {
+	public String viralGenerator(@RequestParam(value = "a", required = false, defaultValue = "0") String a, @RequestParam(value = "b", required = false, defaultValue = "0") String b, Model model) {
 		
 		model.addAttribute("a", a);
 		model.addAttribute("b", b);
@@ -58,7 +58,7 @@ public class PageController {
 		
 		model.addAttribute("hm", result);
 		
-		return "generator";
+		return "viralgenerator";
 	}
 	
 }
